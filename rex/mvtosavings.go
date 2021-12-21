@@ -1,7 +1,7 @@
 package rex
 
 import (
-	eos "github.com/eoscanada/eos-go"
+	eos "github.com/Jumper-Bridge/cyberway"
 )
 
 func NewMoveToSavings(owner eos.AccountName, rex eos.Asset) *eos.Action {

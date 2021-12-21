@@ -1,7 +1,7 @@
 package sudo
 
 import (
-	eos "github.com/eoscanada/eos-go"
+	eos "github.com/Jumper-Bridge/cyberway"
 )
 
 // NewExec creates an `exec` action, found in the `eosio.wrap`

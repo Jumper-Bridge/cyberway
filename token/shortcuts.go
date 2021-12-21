@@ -1,6 +1,6 @@
 package token
 
-import eos "github.com/eoscanada/eos-go"
+import eos "github.com/Jumper-Bridge/cyberway"
 
 var AN = eos.AN
 var PN = eos.PN

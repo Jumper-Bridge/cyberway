@@ -1,7 +1,7 @@
 package ship
 
 import (
-	"github.com/eoscanada/eos-go"
+	"github.com/Jumper-Bridge/cyberway"
 )
 
 // Request

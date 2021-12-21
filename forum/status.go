@@ -1,7 +1,7 @@
 package forum
 
 import (
-	eos "github.com/eoscanada/eos-go"
+	eos "github.com/Jumper-Bridge/cyberway"
 )
 
 // Status is an action to set a status update for a given account on the forum contract.

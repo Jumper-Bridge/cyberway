@@ -1,7 +1,7 @@
 package forum
 
 import (
-	eos "github.com/eoscanada/eos-go"
+	eos "github.com/Jumper-Bridge/cyberway"
 )
 
 // NewVote is an action representing a simple vote to be broadcast

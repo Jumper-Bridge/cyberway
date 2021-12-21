@@ -7,11 +7,11 @@ import (
 	"go.uber.org/zap"
 )
 
-var traceEnabled = logging.IsTraceEnabled("eos-go", "github.com/eoscanada/eos-go")
+var traceEnabled = logging.IsTraceEnabled("eos-go", "github.com/Jumper-Bridge/cyberway")
 var zlog = zap.NewNop()
 
 func init() {
-	logging.Register("github.com/eoscanada/eos-go", &zlog)
+	logging.Register("github.com/Jumper-Bridge/cyberway", &zlog)
 }
 
 func EnableDebugLogging(l *zap.Logger) {

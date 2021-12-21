@@ -1,8 +1,6 @@
 package p2p
 
-import (
-	"github.com/eoscanada/eos-go"
-)
+import "github.com/eoscanada/eos-go"
 
 type Envelope struct {
 	Sender   *Peer

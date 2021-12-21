@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/eoscanada/eos-go"
+	"github.com/Jumper-Bridge/cyberway"
 	"go.uber.org/zap"
 )
 
