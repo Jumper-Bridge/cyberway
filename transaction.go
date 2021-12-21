@@ -27,7 +27,9 @@ type TransactionHeader struct {
 
 	MaxNetUsageWords Varuint32 `json:"max_net_usage_words"`
 	MaxCPUUsageMS    uint8     `json:"max_cpu_usage_ms"`
-	DelaySec         Varuint32 `json:"delay_sec"` // number of secs to delay, making it cancellable for that duration
+	MaxRamKbytes     Varuint32 `json:"max_ram_kbytes"`     // CyberWay extra
+	MaxStorageKbytes Varuint32 `json:"max_storage_kbytes"` // CyberWay extra
+	DelaySec         Varuint32 `json:"delay_sec"`          // number of secs to delay, making it cancellable for that duration
 }
 
 // Transaction represents an EOS transaction that is no signed yet.
