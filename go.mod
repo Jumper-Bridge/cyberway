@@ -1,4 +1,4 @@
-module github.com/eoscanada/eos-go
+module github.com/Jumper-Bridge/cyberway
 
 go 1.13
 
