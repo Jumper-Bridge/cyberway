@@ -693,8 +693,6 @@ func (f *ArrayOfPublicKeys) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	tmpa := ArrayOfPublicKeys(tmp)
-
-	f = &tmpa
+	*f = ArrayOfPublicKeys(tmp)
 	return nil
 }
