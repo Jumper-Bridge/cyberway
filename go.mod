@@ -3,7 +3,7 @@ module github.com/Jumper-Bridge/cyberway
 go 1.13
 
 require (
-
+	github.com/eoscanada/eos-go v0.10.0
 	github.com/pkg/errors v0.9.1
 	github.com/streamingfast/logging v0.0.0-20210811175431-f3b44b61606a
 	github.com/stretchr/testify v1.5.1

@@ -1,4 +1,4 @@
-package eos
+package cyberway
 
 import (
 	"bytes"
@@ -624,7 +624,6 @@ func (api *API) GetRequiredKeys(ctx context.Context, tx *Transaction) (out *GetR
 	if err != nil {
 		return nil, err
 	}
-
 	err = api.call(ctx, "chain", "get_required_keys", M{"transaction": tx, "available_keys": keys}, &out)
 	return
 }

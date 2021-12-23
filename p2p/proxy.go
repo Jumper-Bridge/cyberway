@@ -3,7 +3,7 @@ package p2p
 import (
 	"fmt"
 
-	"github.com/eoscanada/eos-go"
+	eos "github.com/Jumper-Bridge/cyberway"
 	"go.uber.org/zap"
 )
 

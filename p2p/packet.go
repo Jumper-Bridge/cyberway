@@ -1,6 +1,6 @@
 package p2p
 
-import "github.com/eoscanada/eos-go"
+import eos "github.com/Jumper-Bridge/cyberway"
 
 type Envelope struct {
 	Sender   *Peer

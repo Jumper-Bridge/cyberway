@@ -1,4 +1,4 @@
-package eos
+package cyberway
 
 import (
 	"github.com/streamingfast/logging"

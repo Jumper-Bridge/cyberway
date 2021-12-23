@@ -1,10 +1,10 @@
-package eos
+package cyberway
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/Jumper-Bridge/cyberway/eoserr"
+	eoserr "github.com/Jumper-Bridge/cyberway/eoserr"
 )
 
 // APIError represents the errors as reported by the server

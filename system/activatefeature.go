@@ -1,6 +1,6 @@
 package system
 
-import eos "github.com/eoscanada/eos-go"
+import eos "github.com/Jumper-Bridge/cyberway"
 
 func NewActivateFeature(featureDigest eos.Checksum256) *eos.Action {
 	return &eos.Action{

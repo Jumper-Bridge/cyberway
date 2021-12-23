@@ -1,4 +1,4 @@
-package eoserr
+package cyberwayerr
 
 import "fmt"
 

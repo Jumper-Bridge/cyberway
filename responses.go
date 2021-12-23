@@ -1,4 +1,4 @@
-package eos
+package cyberway
 
 import (
 	"encoding/hex"
@@ -331,7 +331,7 @@ type GetRawABIResp struct {
 }
 
 type GetRequiredKeysResp struct {
-	RequiredKeys []ecc.PublicKey `json:"required_keys"`
+	RequiredKeys ArrayOfPublicKeys `json:"required_keys"`
 }
 
 type GetAccountsByAuthorizersResp struct {
@@ -668,4 +668,33 @@ func (s ExceptLogLevel) String() string {
 	}
 
 	return "off"
+}
+
+// CyberWay serialize uints sometimes with string quotes.
+// This special type can Unmarshal both represenations correctly
+
+type ArrayOfPublicKeys []ecc.PublicKey
+
+func (f ArrayOfPublicKeys) MarshalJSON() ([]byte, error) {
+	return json.Marshal([]ecc.PublicKey(f))
+}
+
+func (f *ArrayOfPublicKeys) UnmarshalJSON(data []byte) error {
+
+	str := string(data)
+	if str == `null` {
+		f = new(ArrayOfPublicKeys)
+		return nil
+	}
+
+	var tmp []ecc.PublicKey
+	err := json.Unmarshal(data, &tmp)
+	if err != nil {
+		return err
+	}
+
+	tmpa := ArrayOfPublicKeys(tmp)
+
+	f = &tmpa
+	return nil
 }
